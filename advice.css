@@ -1,0 +1,75 @@
+@import url('https://fonts.google.com/specimen/Manrope');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F2632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 450px;
+    text-align: center;
+    /* border: 1px solid white; */
+    padding: 30px 40px 50px;
+    color: white;
+    background-color: #323A49;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+
+}
+
+#quote {
+    font-size: 20px;
+    font-family: Manrope;
+    /* font-weight: 800; */
+}
+#advice{
+    font-size: 12px;
+    font-family: Manrope;
+    color: #52FFA8;
+    letter-spacing: 5px;
+
+}
+#btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    background-color: #52FFA8;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn:hover{
+    box-shadow: 0 0 20px #52FFA8;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+
+    body{
+        padding: 10px;
+    }
+    .container{
+        width: 350px;
+        /* margin: 0 15px; */
+    }
+}
