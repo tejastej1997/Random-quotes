@@ -18,7 +18,7 @@ let getQuote=()=>{
     })
 }
 
-setInterval(() => {
+let stop = setInterval(() => {
   getQuote()
 }, 5000);
 
@@ -31,4 +31,8 @@ setInterval(() => {
     timer.innerHTML=dec;
     dec--;
 }, 1000);
+
+btn.addEventListener('click',()=>{
+    clearInterval(stop);
+})
 
