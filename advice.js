@@ -23,9 +23,6 @@ setInterval(() => {
 }, 5000);
 
 
-
-
-
 setInterval(() => {
     if (dec==0) {
         dec=5;

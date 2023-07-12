@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    width: 450px;
+    max-width: 450px;
     text-align: center;
     /* border: 1px solid white; */
     padding: 30px 40px 50px;
@@ -35,13 +35,15 @@ body {
     font-family: Manrope;
     /* font-weight: 800; */
 }
-#advice{
+
+#advice {
     font-size: 12px;
     font-family: Manrope;
     color: #52FFA8;
     letter-spacing: 5px;
 
 }
+
 #btn {
     position: absolute;
     left: 50%;
@@ -57,22 +59,13 @@ body {
     justify-content: center;
 }
 
-#btn:hover{
+#btn:hover {
     box-shadow: 0 0 20px #52FFA8;
     transition: 0.2s all;
     cursor: pointer;
 }
 
-@media screen and (max-width:767px) {
 
-    body{
-        padding: 10px;
-    }
-    .container{
-        width: 350px;
-        /* margin: 0 15px; */
-    }
-}
 
 .timer {
     border: 1px solid white;
@@ -89,4 +82,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:767px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 350px;
+        padding: 50px 30px;
+
+        /* margin: 0 15px; */
+    }
+
+    .timer {
+        left: 50%;
+        transform: translateX(-50%);
+        /* top: -20%; */
+    }
 }
